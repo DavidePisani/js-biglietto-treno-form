@@ -1,14 +1,78 @@
+/* COMMON */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #b91450;
+}
+
+.flex-cont{
+    display: flex;    
+}
+
+/* main */
+
+h1{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.info-user{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+}
+.user-form{
+    justify-content: center;
+
+}
+
 .form-item{
     padding: 20px;
+    color: #b91450;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+input{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+select{
+    padding: 5px;
+    font-weight: bold;
+}
+
+button{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #b91450;
+    border-radius: 10px;
+}
+
+#generate-ticket{
+    border: 2px solid #f2a460;
 }
 
 .ticket{
+    width: 60%;
+    margin: 30px auto;
+    background-color: white;
     display: none;
 }
 

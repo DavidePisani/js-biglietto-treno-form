@@ -21,12 +21,12 @@ generateButton.addEventListener('click',
         const finalPrice = price - discount
 
 // Tipo di tariffa
-        let ticketOffert = "Tariffa standard";
+        let ticketOffert = "Biglietto standard";
 
         if (userAge === 'minorenne') {
-            ticketOffert = "Tariffa minorenne"
+            ticketOffert = "Biglietto minorenne"
         }else if (userAge === 'over') {
-            ticketOffert = "Tariffa Over"
+            ticketOffert = "Biglietto Over 65"
         }
         
 // stampa del tipo di biglietto 
