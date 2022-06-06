@@ -5,50 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Biglietto del treno</title>
 </head>
 <body>
-
+<!-- FORM -->
     <div class="user-form">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+        <!-- nome e cognome  -->
         <div class="form-item">
             <label for="user-name">Nome e Cognome</label>
             <input type="text" id="user-name">
         </div>
-
+        <!-- km da percorrere -->
         <div class="form-item">
             <label for="user-km">Km da percorrere</label>
             <input type="number" id="user-km">
         </div>
-
+        <!-- età passegero -->
         <div class="form-item">
-            <label for="user-age">Fascia di età</label>
+            <label for="user-age">Età passeggero</label>
             <select id="user-age">
                 <option value="maggiorenne">Maggiorenne</option>
                 <option value="minorenne">Minorenne</option>
                 <option value="over">Over 65</option>
             </select>
         </div>
-
+        <!-- bottoni -->
         <div class="form-item">
             <button id="generate-ticket">Genera</button>
             <button id="delete-ticket">Annulla</button>
         </div>
         
     </div>
-
+    <!-- BIGLIETTO  -->
     <div id="ticket" class="ticket">
         <h2>IL TUO BIGLIETTO</h2>
         <div> Nome Passeggero: <span id="ticket-name"></span></div>
-        <div> Nome offerta: <span id="ticket-offert"></span></div>
+        <div> Tipo offerta: <span id="ticket-offert"></span></div>
         <div> Carrozza: <span id="carrozza"></span></div>
         <div> Codice CP: <span id="code-cp"></span></div>
         <div> Costo Biglietto:<span id="ticket-price"></span>€</div>
     </div>
-
-
-
-
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>

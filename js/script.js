@@ -1,3 +1,5 @@
+// acquisizione dati tramite bottone
+
 const generateButton = document.getElementById('generate-ticket');
 generateButton.addEventListener('click',
     function(){
@@ -7,6 +9,7 @@ generateButton.addEventListener('click',
         
         const userAge = document.getElementById('user-age').value;
 
+// Calcolo vari prezzi 
         const price = userKm * 0.21;
         let discount = 0;
 
@@ -15,18 +18,28 @@ generateButton.addEventListener('click',
         }else if (userAge === 'over') {
             discount = price * 40 / 100;
         }
-
         const finalPrice = price - discount
 
+// Tipo di tariffa
+        let ticketOffert = "Tariffa standard";
+
+        if (userAge === 'minorenne') {
+            ticketOffert = "Tariffa minorenne"
+        }else if (userAge === 'over') {
+            ticketOffert = "Tariffa Over"
+        }
+        
+// stampa del tipo di biglietto 
         document.getElementById('ticket').classList.add ('active')
         document.getElementById('ticket-name').innerHTML = userName
-        document.getElementById('ticket-offert').innerHTML = userAge
+        document.getElementById('ticket-offert').innerHTML = ticketOffert
         document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10);
-        document.getElementById('code-cp').innerHTML = Math.floor(Math.random() * 10000)
+        document.getElementById('code-cp').innerHTML = Math.floor(Math.random() * 100000)
         document.getElementById('ticket-price').innerHTML = finalPrice.toFixed(2)
         
     }
 )
+// reset delle informazioni
 const deleteTicket = document.getElementById('delete-ticket');
 deleteTicket.addEventListener('click',
     function(){
