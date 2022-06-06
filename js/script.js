@@ -34,7 +34,7 @@ generateButton.addEventListener('click',
         document.getElementById('ticket-name').innerHTML = userName
         document.getElementById('ticket-offert').innerHTML = ticketOffert
         document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10);
-        document.getElementById('code-cp').innerHTML = Math.floor(Math.random() * 100000)
+        document.getElementById('code-cp').innerHTML = Math.floor(Math.random() * 100000);
         document.getElementById('ticket-price').innerHTML = finalPrice.toFixed(2)
         
     }
@@ -45,7 +45,7 @@ deleteTicket.addEventListener('click',
     function(){
         document.getElementById('ticket').classList.remove ('active')
         document.getElementById('user-name').value='';
-        document.getElementById('user-km').value='';
-        document.getElementById('user-age').value= 'Maggiorenne';
+        document.getElementById('user-km').value ='';
+        document.getElementById('user-age').value = 'maggiorenne';
     }
 )

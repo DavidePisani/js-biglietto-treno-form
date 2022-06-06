@@ -69,10 +69,20 @@ button{
     border: 2px solid #f2a460;
 }
 
-.ticket{
+h2{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding-top: 20px ;
+}
+
+.my-ticket{
     width: 60%;
-    margin: 30px auto;
+    margin: 0 auto;
     background-color: white;
+}
+
+.ticket{
     display: none;
 }
 
