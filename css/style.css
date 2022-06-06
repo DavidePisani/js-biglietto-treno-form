@@ -20,7 +20,7 @@ h1{
     color: white;
     padding: 20px 0;
 }
-
+/* FORM */
 .info-user{
     width: 60%;
     margin: 0 auto;
@@ -68,7 +68,7 @@ button{
 #generate-ticket{
     border: 2px solid #f2a460;
 }
-
+/* MIO BIGLIETTO */
 h2{
     text-align: center;
     color: white;
